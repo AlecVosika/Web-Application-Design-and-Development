@@ -1,0 +1,41 @@
+body{
+    font-family: sans-serif;
+ }
+
+img{
+   float: left;
+}
+
+header>h2{
+   color: orange;
+   font-size: 52px;
+   padding-left: 120px;
+   font-style: italic;
+   text-shadow: 3px 3px black;
+}
+
+header>h3{
+   font-size: 28px;
+   padding-left: 120px;
+}
+
+ h1::first-letter{
+    font-size: 200%;
+ }
+
+ a:link,a:visited{
+    color: orange;
+ }
+
+ a:hover,a:focus{
+    color: green;
+ }
+
+ li{
+    padding: .2em;
+ }
+ 
+ footer{
+    font-size: 11px;
+    text-align: center;
+ }
