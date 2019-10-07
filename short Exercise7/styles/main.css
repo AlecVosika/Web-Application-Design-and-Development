@@ -1,0 +1,176 @@
+html {
+    background-image: url("../images/bats.gif");
+}
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 800px;
+    margin: auto;
+    border: 3px solid black;
+    background: #FFF;
+    box-shadow: 0 9px 18px 9px;
+    flex-flow: row wrap;
+}
+
+header {
+    border-bottom: 1px solid #000;
+    background: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    flex: 100%;
+}
+
+header img {
+    margin: 15px;
+    float: left;
+}
+
+header h1 {
+    margin: 12px;
+}
+
+header h2 {
+    font-weight: bold;
+    font-size: 230%;
+    margin: 15px;
+}
+
+header h3 {
+    font-weight: bold;
+    font-size: 125%;
+    margin: 15px;
+}
+
+header nav {
+    clear: both;
+    text-align: center;
+    color: white;
+    background: black;
+}
+
+header nav ul {
+    position: relative;
+}
+
+header nav ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+    width: 160px;
+    background: black;
+    flex-flow: column;
+}
+
+header nav ul li:hover ul,
+header nav ul ul:hover {
+    display: flex;
+}
+
+header nav a {
+    color: white;
+}
+
+header nav a:hover {
+    background: #9E9E9E;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    flex: 1;
+}
+
+nav a {
+    font-weight: 500;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+}
+
+body > nav {
+    box-sizing: border-box;
+    padding: 16px;
+    flex: 0 0 160px;
+}
+
+body > nav ul {
+    flex-flow: column;
+}
+
+body > nav li {
+    margin: 4px 0;
+}
+
+body > nav a {
+    font-weight: bold;
+    background: #FF9800;
+    border: 2px solid black;
+    color: #000;
+}
+
+main {
+    padding: 16px;
+    flex: 1;
+}
+
+main h1::first-letter {
+    font-size: 2.8125rem;
+}
+
+main a {
+    font-weight: 700;
+    color: #FF9800;
+}
+
+td a {
+    font-weight: 100;
+    color: black;
+}
+
+main td a:focus,
+main td a:hover {
+    color: black;
+}
+
+main a:focus,
+main a:hover {}
+
+footer {
+    font-size: 0.875rem;
+    padding: 16px;
+    text-align: center;
+    border-top: 2px solid black;
+    background: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    flex: 100%;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    font-weight: bold;
+    margin: 0;
+}
+
+h3 {
+    font-weight: bold;
+    padding-top: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.current {
+    color: #FF9800;
+}
