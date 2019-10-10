@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Convert from Fahrenheit to Centigrade</title>
+    
+    <script>
+        
+        var f_temp;
+        var c_temp;
+        
+        while (true)
+        {
+            f_temp = prompt("Enter Fahrenheit temperature"); //Prompt user
+
+            if (f_temp == 999) //Used to end the application
+                
+                break;
+
+            if (f_temp < -100 || f_temp > 212) //Checks if the number entered is less than -100 or greater that 212
+                
+                alert("You entered " + f_temp + ".\nEntry must range is from -100 to +212."); 
+
+            else //Gives answer alert
+            {
+                c_temp = (f_temp - 32) * 5 / 9;
+                alert("Fahrenheit temperature is " + f_temp + "\nCelsius temperature is " + c_temp);
+
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <main>
+        <h1>Thanks for using the temperature converter</h1>
+    </main>
+</body>
+
+</html>
